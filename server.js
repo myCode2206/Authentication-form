@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 
 mongoose
   .connect(
-    "mongodb+srv://shapeShiftDB:mukulbhai16@cluster0.vmp43iw.mongodb.net/"
+    "mongodb+srv://shapeShiftDB:mukulbhai16@cluster0.vmp43iw.mongodb.net/SHAPESHIFT_OFFICIAL"
   )
   .then(() => {
     console.log("mongoose connected");
