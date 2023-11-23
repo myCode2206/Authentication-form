@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 
 mongoose
   .connect(
-    "mongodb+srv://shapeShiftDB:mukulbhai16@cluster0.vmp43iw.mongodb.net/SHAPESHIFT_OFFICIAL"
+    "mongodb+srv://shapeShiftDB:mukulbhai16@cluster0.vmp43iw.mongodb.net/?retryWrites=true&w=majority"
   )
   .then(() => {
     console.log("mongoose connected");
@@ -20,15 +20,15 @@ mongoose
 const authentication = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: true,
   },
   email: {
     type: String,
-    require: true,
+    required: true,
   },
   pass: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 
