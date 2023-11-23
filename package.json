@@ -1,6 +1,6 @@
 {
   "name": "log-in-signup-with-db",
-  "version": "16.20.1",
+  "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
